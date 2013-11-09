@@ -1,0 +1,651 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.05586680000000399,
+            "longitude_delta": 0.08101489000000583
+        },
+        "center": {
+            "latitude": 37.782070000000004,
+            "longitude": -122.43222255
+        }
+    },
+    "total": 11989,
+    "businesses": [{
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/the-chairman-truck-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1123,
+        "name": "The Chairman Truck",
+        "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/kE2jDrjbj6X-xKslrLlAAQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/the-chairman-truck-san-francisco",
+        "phone": "4158138800",
+        "snippet_text": "I ABSOLUTELY LOVE THIS FOOD TRUCK! \n\nI've tried a lot of different food trucks/carts and chairman always wins my heart at the end of all my food truck...",
+        "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/h_jIunZo5UIsVzO2bgggRw/ms.jpg",
+        "categories": [
+            ["Chinese", "chinese"],
+            ["Food Trucks", "foodtrucks"]
+        ],
+        "display_phone": "+1-415-813-8800",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "the-chairman-truck-san-francisco",
+        "is_closed": false,
+        "location": {
+            "city": "San Francisco",
+            "display_address": ["177 Eddy St", "Tenderloin", "San Francisco, CA 94109"],
+            "neighborhoods": ["Tenderloin", "Union Square"],
+            "postal_code": "94109",
+            "country_code": "US",
+            "address": ["177 Eddy St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/kokkari-estiatorio-san-francisco",
+        "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 2597,
+        "name": "Kokkari Estiatorio",
+        "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/48agwG-tQGCJYVZcZ8pH1w/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/kokkari-estiatorio-san-francisco",
+        "menu_date_updated": 1383616730,
+        "phone": "4159810983",
+        "snippet_text": "Amazing greek cuisine\n\nI am not a fan of Greek food,  but i loved kokkary. Their chicken skewer with yogurt were perfectly cooked and their pita bread and...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/q79Az8osDxYXxJZXv-3eCg/ms.jpg",
+        "categories": [
+            ["Greek", "greek"],
+            ["Mediterranean", "mediterranean"],
+            ["Modern European", "modern_european"]
+        ],
+        "display_phone": "+1-415-981-0983",
+        "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform",
+        "id": "kokkari-estiatorio-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Front St & Battery St",
+            "city": "San Francisco",
+            "display_address": ["200 Jackson St", "(b/t Front St & Battery St)", "Financial District", "San Francisco, CA 94111"],
+            "neighborhoods": ["Financial District"],
+            "postal_code": "94111",
+            "country_code": "US",
+            "address": ["200 Jackson St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/brendas-french-soul-food-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 4286,
+        "name": "Brenda's French Soul Food",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/jfe_kXN-Yj-PQvv69BlJOg/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/brendas-french-soul-food-san-francisco",
+        "menu_date_updated": 1383455188,
+        "phone": "4153458100",
+        "snippet_text": "Hands Down, Brenda's French Soul is delish! I had the Crawfish Beignets, Apple Beignets. It made me want to stand up at my table and applause the resturant!...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/9fpwRXGc886-i63VHKvudA/ms.jpg",
+        "categories": [
+            ["Cajun/Creole", "cajun"]
+        ],
+        "display_phone": "+1-415-345-8100",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "brendas-french-soul-food-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Turk St & Eddy St",
+            "city": "San Francisco",
+            "display_address": ["652 Polk St", "(b/t Turk St & Eddy St)", "Tenderloin", "San Francisco, CA 94102"],
+            "neighborhoods": ["Tenderloin"],
+            "postal_code": "94102",
+            "country_code": "US",
+            "address": ["652 Polk St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/senor-sisig-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 595,
+        "name": "Senor Sisig",
+        "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/focV61Dr4Mr0xCtzM3wmjA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/senor-sisig-san-francisco",
+        "phone": "4156085048",
+        "snippet_text": "So delicious - I don't know why I waited so long to eat here, but it's definitely one of my new favorite food trucks. I don't eat a ton of Filipino food...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/31LqBA0cb06FodcApSyNeQ/ms.jpg",
+        "categories": [
+            ["Filipino", "filipino"],
+            ["Food Trucks", "foodtrucks"],
+            ["Asian Fusion", "asianfusion"]
+        ],
+        "display_phone": "+1-415-608-5048",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "senor-sisig-san-francisco",
+        "is_closed": false,
+        "location": {
+            "city": "San Francisco",
+            "display_address": ["Financial District", "San Francisco, CA 94115"],
+            "neighborhoods": ["Financial District", "SoMa"],
+            "postal_code": "94115",
+            "country_code": "US",
+            "address": [],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": false,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/westfield-san-francisco-centre-food-emporium-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 240,
+        "name": "Westfield San Francisco Centre Food Emporium",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/v3Hh24g83MOPkkZoZv66cA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/westfield-san-francisco-centre-food-emporium-san-francisco",
+        "phone": "4154955656",
+        "snippet_text": "I love this mall simply because it is THE center mall for San Francisco, where you can enjoy walking around, shopping, eating at the best mall food court,...",
+        "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/9KZ28UOfmzRAxVqV12-fiw/ms.jpg",
+        "categories": [
+            ["Food Court", "food_court"]
+        ],
+        "display_phone": "+1-415-495-5656",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "westfield-san-francisco-centre-food-emporium-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Cable Car Turnaround",
+            "city": "San Francisco",
+            "display_address": ["865 Market St", "(b/t Cable Car Turnaround)", "Union Square", "San Francisco, CA 94103"],
+            "neighborhoods": ["Union Square", "SoMa"],
+            "postal_code": "94103",
+            "country_code": "US",
+            "address": ["865 Market St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/hrd-coffee-shop-san-francisco",
+        "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 1111,
+        "name": "HRD Coffee Shop",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/2L7qB8S-mUf72UYaQlg14g/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/hrd-coffee-shop-san-francisco",
+        "menu_date_updated": 1383436684,
+        "phone": "4155432355",
+        "snippet_text": "HRD is one of my favorite places for lunch in the city!\n\nI love their Korean kimchi rice combo, which comes with kimchi fried rice, a bit of veggie, a whole...",
+        "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/_VZdNqsehbfFb-6pFDs4wQ/ms.jpg",
+        "categories": [
+            ["Korean", "korean"],
+            ["Breakfast & Brunch", "breakfast_brunch"]
+        ],
+        "display_phone": "+1-415-543-2355",
+        "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform",
+        "id": "hrd-coffee-shop-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Taber Aly & Park Ave",
+            "city": "San Francisco",
+            "display_address": ["521 3rd St", "Ste A", "(b/t Taber Aly & Park Ave)", "SoMa", "San Francisco, CA 94107"],
+            "neighborhoods": ["SoMa", "Mission Bay"],
+            "postal_code": "94107",
+            "country_code": "US",
+            "address": ["521 3rd St", "Ste A"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/moya-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 188,
+        "name": "Moya",
+        "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/IcNb1mG_x_5GetidHs3EJw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/moya-san-francisco",
+        "phone": "4154315544",
+        "snippet_text": "Great find on 9th. It's a clean small restaurant that serves up delicious Ethiopian food. All of the dishes are to be shared and come with injera and salad....",
+        "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/_Tv0qTPr0tE9EblMaL5B4w/ms.jpg",
+        "categories": [
+            ["Coffee & Tea", "coffee"],
+            ["Ethiopian", "ethiopian"]
+        ],
+        "display_phone": "+1-415-431-5544",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "moya-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Natoma St & Minna St",
+            "city": "San Francisco",
+            "display_address": ["121 9th St", "(b/t Natoma St & Minna St)", "SoMa", "San Francisco, CA 94103"],
+            "neighborhoods": ["SoMa"],
+            "postal_code": "94103",
+            "country_code": "US",
+            "address": ["121 9th St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/la-falafel-san-francisco-2",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 34,
+        "name": "La Falafel",
+        "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/2LrIkZB7mOwu8-9OVhjWfQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/la-falafel-san-francisco-2",
+        "phone": "4157220087",
+        "snippet_text": "The line for this food truck was very short and the line for Mexican was loooong. Thinking the crowd was gravitating towards the good stuff, I did not...",
+        "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/-6yRunvGB0W7XosmZH-M0Q/ms.jpg",
+        "categories": [
+            ["Food Trucks", "foodtrucks"],
+            ["Middle Eastern", "mideastern"],
+            ["Food Stands", "foodstands"]
+        ],
+        "display_phone": "+1-415-722-0087",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "la-falafel-san-francisco-2",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "15th St & 14th St",
+            "city": "San Francisco",
+            "display_address": ["351 Valencia St", "(b/t 15th St & 14th St)", "Mission", "San Francisco, CA 94103"],
+            "neighborhoods": ["Mission"],
+            "postal_code": "94103",
+            "country_code": "US",
+            "address": ["351 Valencia St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/koja-kitchen-san-francisco-4",
+        "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 495,
+        "name": "KoJa Kitchen",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/ftNP6YnRd104zLRUZ4uTGQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/koja-kitchen-san-francisco-4",
+        "phone": "4159927394",
+        "snippet_text": "Chilly night, need something spicy to warm up. Hey, what's this?! KoJa? What a concept! Loved the beef rice bowl with salad. Less than $10 for a balanced...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/CSniHvKmPDl8vHHnaUh3OQ/ms.jpg",
+        "categories": [
+            ["Korean", "korean"],
+            ["Japanese", "japanese"],
+            ["Food Trucks", "foodtrucks"]
+        ],
+        "display_phone": "+1-415-992-7394",
+        "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "koja-kitchen-san-francisco-4",
+        "is_closed": false,
+        "location": {
+            "city": "San Francisco",
+            "display_address": ["Marina/Cow Hollow", "San Francisco, CA 94123"],
+            "neighborhoods": ["Marina/Cow Hollow"],
+            "postal_code": "94123",
+            "country_code": "US",
+            "address": [],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/nopa-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 3351,
+        "name": "NOPA",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/k33biw4l13t-g_FowllXGw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/nopa-san-francisco",
+        "menu_date_updated": 1383454245,
+        "phone": "4158648643",
+        "snippet_text": "Favorite spot in the city. Haven't really had anything I didn't like. Good drink selection. The menu is seasonal so it's always changing. Get the split pea...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/p6SMBwKBPWDGCJtRthUwBA/ms.jpg",
+        "categories": [
+            ["American (New)", "newamerican"],
+            ["Modern European", "modern_european"],
+            ["Breakfast & Brunch", "breakfast_brunch"]
+        ],
+        "display_phone": "+1-415-864-8643",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "nopa-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Fell St & Hayes St",
+            "city": "San Francisco",
+            "display_address": ["560 Divisadero St", "(b/t Fell St & Hayes St)", "Alamo Square", "San Francisco, CA 94117"],
+            "neighborhoods": ["Alamo Square"],
+            "postal_code": "94117",
+            "country_code": "US",
+            "address": ["560 Divisadero St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/suppenk%C3%BCche-san-francisco-2",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 2303,
+        "name": "Suppenküche",
+        "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/wfkKCJPJRTolff97RZfQsA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/suppenk%C3%BCche-san-francisco-2",
+        "menu_date_updated": 1383427344,
+        "phone": "4152529289",
+        "snippet_text": "I live two blocks from this pace and I absolutely LOVE it.  \n\nFirst off, their beer selection is awesome (although I tend to always order the same one, it's...",
+        "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/Xj817E9D-O-p54aQJMzTaA/ms.jpg",
+        "categories": [
+            ["German", "german"]
+        ],
+        "display_phone": "+1-415-252-9289",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "suppenküche-san-francisco-2",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Linden St & Fell St",
+            "city": "San Francisco",
+            "display_address": ["525 Laguna St", "(b/t Linden St & Fell St)", "Hayes Valley", "San Francisco, CA 94102"],
+            "neighborhoods": ["Hayes Valley"],
+            "postal_code": "94102",
+            "country_code": "US",
+            "address": ["525 Laguna St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/first-korean-market-san-francisco",
+        "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 164,
+        "name": "First Korean Market",
+        "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/ZvJSjJBvfPvgzRaBBysWlw/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/first-korean-market-san-francisco",
+        "phone": "4152212565",
+        "snippet_text": "Love this neighborhood Korean market!\nKimbap, duk boki, pancakes, pan chan, sweet rice cakes!\ncame here for years for kimbap and any other korean cravings....",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/4eU8fPIPtRP8ma5RvFB4Kw/ms.jpg",
+        "categories": [
+            ["Korean", "korean"],
+            ["Ethnic Food", "ethnicmarkets"]
+        ],
+        "display_phone": "+1-415-221-2565",
+        "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "first-korean-market-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "11th Ave & 10th Ave",
+            "city": "San Francisco",
+            "display_address": ["4625 Geary Blvd", "(b/t 11th Ave & 10th Ave)", "Inner Richmond", "San Francisco, CA 94118"],
+            "neighborhoods": ["Inner Richmond"],
+            "postal_code": "94118",
+            "country_code": "US",
+            "address": ["4625 Geary Blvd"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/asiasf-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1235,
+        "name": "AsiaSF",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/dHGn71YdBXaj-kVr-srmaA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/asiasf-san-francisco",
+        "menu_date_updated": 1383431762,
+        "phone": "4152552742",
+        "snippet_text": "Awesome entertainment, food is tasty, but portions are small for the cost.  It's best to come with large groups as they tend to get the most attention.\n\nThe...",
+        "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/_G6C1BJbFCYv-vy-5UCQog/ms.jpg",
+        "categories": [
+            ["Asian Fusion", "asianfusion"],
+            ["Dance Clubs", "danceclubs"]
+        ],
+        "display_phone": "+1-415-255-2742",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "asiasf-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Tehama St & Howard St",
+            "city": "San Francisco",
+            "display_address": ["201 9th St", "(b/t Tehama St & Howard St)", "SoMa", "San Francisco, CA 94103"],
+            "neighborhoods": ["SoMa"],
+            "postal_code": "94103",
+            "country_code": "US",
+            "address": ["201 9th St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/tanguito-san-francisco",
+        "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 290,
+        "name": "Tanguito",
+        "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/qzzU59zJm4BbZkemAtLVQQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/tanguito-san-francisco",
+        "phone": "4155774223",
+        "snippet_text": "I've lived in SF for 16 years and only eat at Fisherman's Wharf when forced because of out of town guests.  A friend from the South Bay saw this place on...",
+        "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/WDyO6D4e00NDaND42JjYqg/ms.jpg",
+        "categories": [
+            ["Argentine", "argentine"],
+            ["Food Stands", "foodstands"]
+        ],
+        "display_phone": "+1-415-577-4223",
+        "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "tanguito-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Beach St & Jefferson St",
+            "city": "San Francisco",
+            "display_address": ["2850 Jones St", "(b/t Beach St & Jefferson St)", "North Beach/Telegraph Hill", "San Francisco, CA 94133"],
+            "neighborhoods": ["North Beach/Telegraph Hill", "Fisherman's Wharf"],
+            "postal_code": "94133",
+            "country_code": "US",
+            "address": ["2850 Jones St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/samovar-tea-lounge-san-francisco-2",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1256,
+        "name": "Samovar Tea Lounge",
+        "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/BHrJaadeWkeltRrOdVxYlQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/samovar-tea-lounge-san-francisco-2",
+        "phone": "4152279400",
+        "snippet_text": "If you want a light and healthy meal, this would be a great place to go to with a couple of friends or sharing a 20-something-dollar plate with a date. \n\nI...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/OSpYraaxH7bl7YO59NAj7w/ms.jpg",
+        "categories": [
+            ["Tea Rooms", "tea"],
+            ["Sandwiches", "sandwiches"],
+            ["Salad", "salad"]
+        ],
+        "display_phone": "+1-415-227-9400",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "samovar-tea-lounge-san-francisco-2",
+        "is_closed": false,
+        "location": {
+            "city": "San Francisco",
+            "display_address": ["Yerba Buena Gardens - Upper Terrace", "730 Howard St", "Financial District", "San Francisco, CA 94103"],
+            "neighborhoods": ["Financial District", "SoMa"],
+            "postal_code": "94103",
+            "country_code": "US",
+            "address": ["Yerba Buena Gardens - Upper Terrace", "730 Howard St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/dosa-on-fillmore-san-francisco-3",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1611,
+        "name": "Dosa On Fillmore",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/JBweym0imlC0Tsq0wWcj5Q/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/dosa-on-fillmore-san-francisco-3",
+        "menu_date_updated": 1383479769,
+        "phone": "4154413672",
+        "snippet_text": "Excellent food, service, and atmosphere. \nJust lovely!\nMake sure you book with time ahead,\nPlan your night at DOSA, and enjoy the best service in town....",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/-oh76hWDGCyH6ivT66mX8w/ms.jpg",
+        "categories": [
+            ["Indian", "indpak"]
+        ],
+        "display_phone": "+1-415-441-3672",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "singleplatform",
+        "id": "dosa-on-fillmore-san-francisco-3",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "Post St & Sutter St",
+            "city": "San Francisco",
+            "display_address": ["1700 Fillmore St", "(b/t Post St & Sutter St)", "Japantown", "San Francisco, CA 94115"],
+            "neighborhoods": ["Japantown", "Lower Pacific Heights"],
+            "postal_code": "94115",
+            "country_code": "US",
+            "address": ["1700 Fillmore St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/gary-danko-san-francisco",
+        "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 3512,
+        "name": "Gary Danko",
+        "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/48agwG-tQGCJYVZcZ8pH1w/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/gary-danko-san-francisco",
+        "menu_date_updated": 1383448921,
+        "phone": "4157492060",
+        "snippet_text": "Highly Recommanded\n\nThe food here is excellent. I recommend the ahi tuner starter. The wild mushroom bisque they offered before the meal and the pastry tray...",
+        "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg",
+        "categories": [
+            ["American (New)", "newamerican"]
+        ],
+        "display_phone": "+1-415-749-2060",
+        "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform",
+        "id": "gary-danko-san-francisco",
+        "is_closed": false,
+        "location": {
+            "city": "San Francisco",
+            "display_address": ["800 N Point St", "Russian Hill", "San Francisco, CA 94109"],
+            "neighborhoods": ["Russian Hill", "Fisherman's Wharf"],
+            "postal_code": "94109",
+            "country_code": "US",
+            "address": ["800 N Point St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/dosa-on-valencia-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1624,
+        "name": "Dosa on Valencia",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/_oRfjMyM12nW24kmXLydAQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/dosa-on-valencia-san-francisco",
+        "menu_date_updated": 1383434460,
+        "phone": "4156423672",
+        "snippet_text": "Weird.  Apparently, it wasn't my first time here.... LOL\n\nWe had the summer squash for starter and the fire broth (tomatoes with heat!)\n\nPaneer & Peas Dosa...",
+        "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/0ck40oJ044kYdAvd4e4oHQ/ms.jpg",
+        "categories": [
+            ["Indian", "indpak"]
+        ],
+        "display_phone": "+1-415-642-3672",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "dosa-on-valencia-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "21st St & Liberty St",
+            "city": "San Francisco",
+            "display_address": ["995 Valencia St", "(b/t 21st St & Liberty St)", "Mission", "San Francisco, CA 94110"],
+            "neighborhoods": ["Mission"],
+            "postal_code": "94110",
+            "country_code": "US",
+            "address": ["995 Valencia St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/udupi-palace-san-francisco",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 813,
+        "name": "Udupi Palace",
+        "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/wkEzRwOu6eWUkJ5ziwb5Zw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/udupi-palace-san-francisco",
+        "menu_date_updated": 1383457282,
+        "phone": "4159708000",
+        "snippet_text": "In no place across my global wanderings have I met face-to-plate with Indian food this good. \n\nTo be fair, I've yet to hit India itself, but my significant...",
+        "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/bHBMIPrPulSCjXHo9HqFuQ/ms.jpg",
+        "categories": [
+            ["Indian", "indpak"],
+            ["Vegetarian", "vegetarian"],
+            ["Vegan", "vegan"]
+        ],
+        "display_phone": "+1-415-970-8000",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "udupi-palace-san-francisco",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "21st St & Hill St",
+            "city": "San Francisco",
+            "display_address": ["1007 Valencia St", "(b/t 21st St & Hill St)", "Mission", "San Francisco, CA 94110"],
+            "neighborhoods": ["Mission"],
+            "postal_code": "94110",
+            "country_code": "US",
+            "address": ["1007 Valencia St"],
+            "state_code": "CA"
+        }
+    }, {
+        "is_claimed": true,
+        "rating": 4,
+        "mobile_url": "http://m.yelp.com/biz/burma-superstar-san-francisco-2",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 4214,
+        "name": "Burma Superstar",
+        "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/vkxm1vO0_ceDjpXkIhlBlQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/burma-superstar-san-francisco-2",
+        "menu_date_updated": 1383442928,
+        "phone": "4153872147",
+        "snippet_text": "The fine city of San Francisco is a mecca for diverse dining. Burma Superstar needs to be on your list of places to eat.\n\nIf you decide to have a bite, be...",
+        "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/0SKtxx-aOgXM9jdpAVAD0g/ms.jpg",
+        "categories": [
+            ["Burmese", "burmese"]
+        ],
+        "display_phone": "+1-415-387-2147",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform",
+        "id": "burma-superstar-san-francisco-2",
+        "is_closed": false,
+        "location": {
+            "cross_streets": "5th Ave & 4th Ave",
+            "city": "San Francisco",
+            "display_address": ["309 Clement St", "(b/t 5th Ave & 4th Ave)", "Inner Richmond", "San Francisco, CA 94118"],
+            "neighborhoods": ["Inner Richmond"],
+            "postal_code": "94118",
+            "country_code": "US",
+            "address": ["309 Clement St"],
+            "state_code": "CA"
+        }
+    }]
+}
