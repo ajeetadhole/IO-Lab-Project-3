@@ -25,13 +25,18 @@ var YSV = {
         }
     })
 };
-function parseYelp(rdata) {
+function parseYelp(rdata) {	
     var ret = {"children": []}, allCat = {}, allNei = {}, allBus = {}, bus = rdata["businesses"];
+	console.log("Business: ", bus);
     for (var i = 0; i < bus.length; i++) {
         var b = bus[i];
+		console.log("Here", b);
         var node = YSV.get(b, "node");
+		console.log("Node: ", node);
         var cats = YSV.get(b, "ca");
+		console.log("Categories: ", cats);
         var nei = YSV.get(b, "nei");
+		console.log("Neighborhood: ", nei);
         allBus[node.name] = node;
         for (var j = 0; j < cats.length; j++) {
             var tc = cats[j];
@@ -48,6 +53,7 @@ function parseYelp(rdata) {
                 allCat[tc]['children'][tn] = true;
             }
         }
+	}
         var i = 0;
         for (var c in allCat) {
             ret["children"][i] = {"name": c, "children": []};
@@ -73,7 +79,7 @@ function parseYelp(rdata) {
 //            var tc=nei[j];
 //            allNei[tc] = true;
 //        }
-    }
+    //}
     return {"name": "root", "children": ret["children"]};
 
 }
@@ -156,13 +162,14 @@ var auth = {
     // This example is a proof of concept, for how to use the Yelp v2 API with javascript.
     // You wouldn't actually want to expose your access token secret like this in a real application.
     accessTokenSecret: "kT8vlGOwYodXzJBJuGjX7Hb3dbE",
-    serviceProvider: {
-        signatureMethod: "HMAC-SHA1"
-    }
+//    serviceProvider: {
+//        signatureMethod: "HMAC-SHA1"
+//    }
 };
 
 var terms = 'food,restaraunts';
 var near = 'San+Francisco';
+var parameterMap = "";
 
 //
 var _categories=[], _neighborhoods=[];
@@ -187,11 +194,14 @@ var accessor = {
 	parameters.push(['oauth_consumer_key', auth.consumerKey]);
 	parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
 	parameters.push(['oauth_token', auth.accessToken]);
-	parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
+	//parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
 	//parameters.push(['limit',"100"]);
 	//parameters.push(["category_filter",""]);
+	
+	
 
 	function ycatsToS(){
+		console.log(parameters);
 		var ret = ""; //arr = _ycats.keys();
 		// var arr =[];
 		// for (var k in _ycats){
@@ -218,9 +228,33 @@ var accessor = {
 		}
 
 		if (p === -1){
-			parameters.push(["category_filter",ret]);
+			for(var i = 0; i <= parameters.length; i++){
+				if(parameters[i][0] === "term"){			
+					parameters[i][1] = ret;				
+				$.each(ret.split(","), function(index, item) {
+					var tags = "";
+					console.log(item);
+					if($.inArray(item, neighborhoods) !== -1)
+						tags += item + ","; 
+				});
+					
+					$("#tags").val(tags);			
+					break;
+				}
+			}
+			console.log("Tags: ", tags);
 		}else{
-			parameters[p][1]=ret;
+/*			OAuth.setTimestampAndNonce(message);
+			OAuth.SignatureMethod.sign(message, accessor);
+			parameterMap = OAuth.getParameterMap(message.parameters);
+			parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature);*/
+			for(var i = 0; i <= parameters.length; i++){
+				if(parameters[i][0] === "term"){			
+					parameters[i][1] = ret;
+					$("#tags").val(ret);
+					break;
+				}
+			}
 		}
 	}
 
@@ -230,43 +264,45 @@ var accessor = {
 		'parameters': parameters
 	};
 
-	OAuth.setTimestampAndNonce(message);
+/*	OAuth.setTimestampAndNonce(message);
 	OAuth.SignatureMethod.sign(message, accessor);
 
 	var parameterMap = OAuth.getParameterMap(message.parameters);
-	parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature);
-	console.log(parameterMap);
+	parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature);*/
 
-	var $_search_yelp = (function(succ, yjson) {
-		var succ = succ || (function(data) {
-			window.console.log("No specified success function", data);
+        var $_search_yelp = (function(succ, yjson) {
+				OAuth.setTimestampAndNonce(message);
+				OAuth.SignatureMethod.sign(message, accessor);
+				parameterMap = OAuth.getParameterMap(message.parameters);
+				parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature);		
+                var succ = succ || (function(data) {
+                        window.console.log("No specified success function", data);
+                });
+
+                var yjson = {
+                        'url': message.action,
+                        'data': parameterMap,
+                        'cache': true,
+                        'dataType': 'jsonp',
+                        'jsonpCallback': 'cb',
+                        'success': succ
+                };
+                $.ajax(yjson);
+        });
+
+		var clFn = (function() {
+			$.ajax({
+				'url': message.action,
+				'data': parameterMap,
+				'cache': true,
+				'dataType': 'jsonp',
+				'jsonpCallback': 'cb',
+/*				'success': function(data, textStats, XMLHttpRequest) {
+					//console.log(data);
+				}*/
+			});
 		});
 
-		var yjson = yjson || {
-			'url': message.action,
-			'data': parameterMap,
-			'cache': true,
-			'dataType': 'jsonp',
-			'jsonpCallback': 'cb',
-			'success': succ
-		};
-		$.ajax(yjson);
-	});
-
-	var clFn = (function() {
-		$.ajax({
-			'url': message.action,
-			'data': parameterMap,
-			'cache': true,
-			'dataType': 'jsonp',
-			'jsonpCallback': 'cb',
-			'success': function(data, textStats, XMLHttpRequest) {
-				console.log(data);
-	/////////////////////////////////////////////
-			}
-		});
-
-	});
 
 $(function() {
     var availableTags = [

@@ -1,7 +1,7 @@
 function d3succ(data) {
-    var diameter = 960,
+    var diameter = 1024,
         format = d3.format(",d");
-
+		
     var pack = d3.layout.pack()
 				.size([diameter - 4, diameter - 4])
 				.value(function(d) {
@@ -54,9 +54,26 @@ function d3succ(data) {
     d3.select(self.frameElement).style("height", diameter + "px");
 }
 
+$("#neighborhoods").on('keydown',function(event) {
+      if (event.keyCode === 13) {
+		console.log('Enter was pressed');
+        console.log(this.value);
+		var input_value = this.value;
+		function refreshVis(){
+		   document.getElementById("content-inner").innerHTML="";
+		   //$_search_yelp(d3succ);
+		   $(".cuisines").show();
+		   $('#nav').find('input, ul, li, div, a').attr('disabled',true);
+       }
+       if(input_value !== ''){
+			_ycats[input_value]=true;
+			ycatsToS();
+			refreshVis();
+       }
+    }
+});
 
-
-$("input").on('keydown',function(event) {
+$("#tags").on('keydown',function(event) {
       if (event.keyCode === 13) {
 		console.log('Enter was pressed');
         console.log(this.value);
@@ -64,14 +81,11 @@ $("input").on('keydown',function(event) {
 		function refreshVis(){
 		   document.getElementById("content-inner").innerHTML="";
 		   $_search_yelp(d3succ);
-
        }
        if(input_value !== ''){
 			_ycats[input_value]=true;
 			ycatsToS();
 			refreshVis();
-			// console.log("ycats: ",_ycats);
-			// console.log("parameters: ", parameters);
        }
     }
 });

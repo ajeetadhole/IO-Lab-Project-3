@@ -20,7 +20,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	
 
-	<style type="text/css">
+	<!--
+    <style type="text/css">
 		#sidebar {
 			float: left;
 		}
@@ -45,7 +46,8 @@
 		text {
 			font: 10px sans-serif;
 		}
-	</style>  
+	</style> 
+    --> 
 			
 	</head>
 	
@@ -68,18 +70,17 @@
 						<h2>Neighbourhoods</h2>
 					</div>
 					<ul>
-						<li><a href="#">Castro</a></li>
-						<li><a href="#">Haight</a></li>
-						<li><a href="#">Marina</a></li>
-						<li><a href="#">Mission</a></li>
-						<li><a href="#">Nob Hill</a></li>
-						<li><a href="#">North Beach</a></li>
-						<li><a href="#">Pac Heights</a></li>
-						<li><a href="#">Richmond</a></li>
-						<li><a href="#">SOMA</a></li>
-						<li><a href="#">Sunset</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Castro';">Castro</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='The Haight';">Haight</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Marina/Cow Hollow';">Marina</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Mission';">Mission</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Nob Hill';">Nob Hill</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='North Beach/Telegraph Hill';">North Beach</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Pacific Heights';">Pacific Heights</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Richmond';">Richmond</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='SoMa';">SoMa</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Sunset';">Sunset</a></li>
 					</ul>
-				</nav>
 				
 				<!-- Search -->
 				<div class="ui-widget">
@@ -88,28 +89,30 @@
 					<input id="neighborhoods" />
 					<!-- </form> -->
 				</div>
+                </nav>
 
 				<!-- Cuisines -->
 				<section class="cuisines">
-					<header>
+					<header style=" margin-bottom: 10px; ">
 						<h2>Cuisines</h2>
 					</header>
 					<ul>
-						<li><a href="#">American</a></li>
-						<li><a href="#">Asian</a></li>
-						<li><a href="#">Greek</a></li>
-						<li><a href="#">Indian</a></li>
-						<li><a href="#">Mexican</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='tradamerican';">American</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='chinese';">Chinese</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='greek';">Greek</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='filipino';">Filipino</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='mexican';">Mexican</a></li>
 					</ul>
-				</section>
 					
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">Cuisines: </label>-->
 					<input id="tags" />
+                    <input type="button" value="Clear" onclick="document.getElementById('tags').value='';" /><input type="button" value="Check Neighborhoods Again" onclick="$('.cuisines').hide(); $('#nav').find('input, ul, li, div, a').attr('disabled',false);" />
 					<!-- </form> -->
 				</div>
+                </section>
 			</div>
 				
 			<!-- Content -->
@@ -118,15 +121,16 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/yelp_search.js"></script>
+        <script type="text/javascript" src="js/yelp_search.js"></script>
 		<script type="text/javascript" src="js/yelp_vis.js"></script> 
-		<script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+<!--		<script>
 			console.log('called');
 			(function($){
 			  clFn();
 			//$searchYelp(d3succ);
 			})($);
-		</script>
+		</script>-->
 	</body>
 </html>
