@@ -56,11 +56,6 @@ function d3succ(data) {
 
 function refreshVis(){
    document.getElementById("content-inner").innerHTML="";
-<<<<<<< HEAD
-=======
-   $(".cuisines").show();
-   $('#nav').find('input, ul, li, div, a').attr('disabled',true);
->>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 }
 
 function sendRequest(){
@@ -70,7 +65,6 @@ function sendRequest(){
 
 $("#neighborhoods").on('keydown',function(event) {
       if (event.keyCode === 13) {
-<<<<<<< HEAD
         var input_value = this.value;
         if(input_value !== ''){
             _ycats[input_value]=true;           
@@ -86,31 +80,6 @@ $("#neighborhoods").on('keydown',function(event) {
             },300);
         } 
     }
-=======
-		var input_value = this.value;
-		if(input_value !== ''){
-			_ycats[input_value]=true;
-		}			
-		ycatsToS();
-		refreshVis();
-	}
-});
-
-$("#neighborhoodList").on("click", "a", function(event) {
-		_ycats[$("#neighborhoods").val()]=true;		
-		ycatsToS();
-		refreshVis();
-});
-
-$("#cuisineList").on("click", "a", function(event) {
-		$.each($("#tags").val().split(","), function(index, item) {
-			if(!(item in _ycats)){
-				_ycats[item]=true;
-			}			
-		});
-		ycatsToS();
-		sendRequest();
->>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 });
 
 $("#neighborhoodList").on("click", "a", function(event) {
@@ -155,7 +124,6 @@ $("#tags").on('keydown',function(event) {
       if (event.keyCode === 13) {
         console.log('Enter was pressed');
         console.log(this.value);
-<<<<<<< HEAD
         var input_value = this.value;
         if(input_value !== ''){
             $.each(input_value.split(","), function(index, item) {
@@ -179,17 +147,6 @@ $("#tags").on('keydown',function(event) {
             $("#content").delay(600).animate({
                 opacity:1,
             },500);
-=======
-		var input_value = this.value;
-       if(input_value !== ''){
-		$.each(input_value.split(","), function(index, item) {
-			if(!(item in _ycats)){
-				_ycats[item]=true;
-			}			
-		});
-			ycatsToS();
-			sendRequest();
->>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
        }
     }
 });
