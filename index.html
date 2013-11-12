@@ -68,6 +68,28 @@
 				<div class="header" id="title">
 					<h2>Select Neighborhood</h2>
 				</div>
+<<<<<<< HEAD
+=======
+			
+				<!-- Nav -->
+				<nav id="nav">
+					<div id="title">
+						<h2>Neighbourhoods</h2>
+					</div>
+					<ul id="neighborhoodList">
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Castro';">Castro</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='The Haight';">Haight</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Marina/Cow Hollow';">Marina</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Mission';">Mission</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Nob Hill';">Nob Hill</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='North Beach/Telegraph Hill';">North Beach</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Pacific Heights';">Pacific Heights</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Richmond';">Richmond</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='SoMa';">SoMa</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Sunset';">Sunset</a></li>
+					</ul>
+				
+>>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
@@ -96,16 +118,37 @@
 				</ul>
             </nav>
 
+<<<<<<< HEAD
 			<!-- Cuisines -->
 			<section class="cuisines">
 				<header class="header">
 					<h2>Select Cuisine</h2>
 				</header>
+=======
+				<!-- Cuisines -->
+				<section class="cuisines">
+					<header style=" margin-bottom: 10px; ">
+						<h2>Cuisines</h2>
+					</header>
+					<ul id="cuisineList">
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='tradamerican';">American</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='chinese';">Chinese</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='greek';">Greek</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='filipino';">Filipino</a></li>
+						<li><a href="javascript:;" onclick="document.getElementById('tags').value='mexican';">Mexican</a></li>
+					</ul>
+					
+>>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">Cuisines: </label>-->
+<<<<<<< HEAD
 					<input type="text" id="tags" placeholder="Search cuisines"/>
+=======
+					<input id="tags" />
+                    <input type="button" value="Clear" onclick="document.getElementById('tags').value=''; document.getElementById('content-inner').innerHTML=''; arr.splice(1,arr.length); arrayObjectMatch();" /><input type="button" value="Check Neighborhoods Again" onclick="$('.cuisines').hide(); $('#nav').find('input, ul, li, div, a').attr('disabled',false); arr.splice(0,arr.length); _ycats = {}; ret = ''"; />
+>>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 					<!-- </form> -->
 				</div>
 				<ul ul id="cuisineList">

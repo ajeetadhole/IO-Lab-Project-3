@@ -188,6 +188,7 @@ var accessor = {
     //parameters.push(['offset', 20]);
     //parameters.push(['limit', 20]);
 
+<<<<<<< HEAD
     parameters.push(['oauth_consumer_key', auth.consumerKey]);
     parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
     parameters.push(['oauth_token', auth.accessToken]);
@@ -224,6 +225,44 @@ var accessor = {
 
         ret = ret.slice(0,-1);
         var p = -1;
+=======
+	parameters.push(['oauth_consumer_key', auth.consumerKey]);
+	parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
+	parameters.push(['oauth_token', auth.accessToken]);
+	//parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
+	//parameters.push(['limit',"100"]);
+	//parameters.push(["category_filter",""]);
+	function arrayObjectMatch(){
+		if(arr.length){
+			var arrayElement = arr[0];
+			for (var i in _ycats){
+				if(_ycats[i] !== arrayElement){
+					delete _ycats[i];
+				}
+			}
+			ret = "";
+		}
+	}
+	
+	function ycatsToS(){
+		console.log(parameters);
+		var ret = "", tags = ""; //arr = _ycats.keys();
+		for (var k in _ycats){
+			if($.inArray(k, arr) === -1){
+				arr.push(k);
+			}
+		}
+
+		for(var i = 0; i < arr.length; i++){
+			ret += ""+arr[i]+",";
+		}
+		// for(var i in Object.keys(_ycats)){
+			// ret += Object.keys(_ycats)[i] + ",";
+		// }
+
+		ret = ret.slice(0,-1);
+		var p = -1;
+>>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 
         // for(var i = 0; i <= parameters.length; i++){
             // if(parameters[i] === "category_filter"){         
@@ -235,6 +274,7 @@ var accessor = {
             p = parameters.length - 1;
         }
 
+<<<<<<< HEAD
         if (p === -1){
             for(var i = 0; i <= parameters.length; i++){
                 if(parameters[i][0] === "term"){            
@@ -261,6 +301,44 @@ var accessor = {
                     parameters[i][1] = ret;
                     $.each(ret.split(","), function(index, item) {
                         item = "'" + item + "'";
+=======
+		if (p === -1){
+			for(var i = 0; i <= parameters.length; i++){
+				if(parameters[i][0] === "term"){			
+					parameters[i][1] = ret;
+					console.log("Ret: ", ret);
+					$.each(ret.split(","), function(index, item) {
+						if($.inArray(item, neighborhoods) === -1){
+							tags += item + ",";					
+						}else{
+							tags = "";
+						}
+					});
+					$("#tags").val(tags);			
+					break;
+				}
+			}
+		}else{
+/*			OAuth.setTimestampAndNonce(message);
+			OAuth.SignatureMethod.sign(message, accessor);
+			parameterMap = OAuth.getParameterMap(message.parameters);
+			parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature);*/
+			for(var i = 0; i <= parameters.length; i++){
+				if(parameters[i][0] === "term"){			
+					parameters[i][1] = ret;
+					$.each(ret.split(","), function(index, item) {
+						item = "'" + item + "'";
+
+						if($.inArray(item, neighborhoods) !== -1)
+							tags += item + ",";
+					});
+					$("#tags").val(tags);
+					break;
+				}
+			}
+		}
+	}
+>>>>>>> 33cb38fb6eb93757c432f1d612dd370020d63c1a
 
                         if($.inArray(item, neighborhoods) !== -1)
                             tags += item + ",";
