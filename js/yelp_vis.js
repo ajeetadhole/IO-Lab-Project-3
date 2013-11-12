@@ -1,13 +1,14 @@
 function d3succ(data) {
     var diameter = 800,
         format = d3.format(",d");
-        
+	
+	
     var pack = d3.layout.pack()
                 .size([diameter - 4, diameter - 4])
                 .value(function(d) {
-                    console.log(d);
-                    return d.size;
-                    //return d["rating"];
+		console.log(d);
+		return d.size;
+		//return d["rating"];
     });
 
     var svg = d3.select("#content-inner").append("svg")
@@ -23,10 +24,16 @@ function d3succ(data) {
             .enter().append("g")
             .attr("class", function(d) {
         //console.log(d);
-        return d.children ? "node" : "leaf node";
+				return d.children ? "node" : "leaf node";
     }).attr("transform", function(d) {
         //console.log('transform', d);
         return "translate(" + d.x + "," + d.y + ")";
+    }).on("click", function(d) {
+        console.log('clicked');
+        if(!d.children){
+        console.log('no c');    
+        popup(d);
+        }
     });
 
     node.append("title")
@@ -34,13 +41,11 @@ function d3succ(data) {
                     //console.log('title', d);
                     return d.name + (d.children ? "" : ": " + format(d.size));
             });
-
     node.append("circle")
             .attr("r", function(d) {
                     //console.log("r", d);
                     return d.r;
             });
-
     node.filter(function(d) {
         return !d.children;
     }).append("text")
@@ -150,7 +155,6 @@ $("#tags").on('keydown',function(event) {
        }
     }
 });
-
 $('#searchButton').click(
     function(){
         $("#buttonContainer").delay(100).animate({
@@ -171,3 +175,31 @@ $('#searchButton').click(
         },500);
     }
 );
+
+function popup(d){
+                console.log('popup');
+	$("#popup").remove();
+    var w = $(window).width()/8;
+    var x = ($(window).width()/2)-w/2, y=$(window).height()/2;
+    var s= 'min-width:'+w+'px; position:absolute; left:'+x+'px ; top:'+y+'px; background-color:#ccc; z-index:100;border-radius:10px;padding:10px;';
+    var ret ='<div id="popup" style="'+s+'">';
+    ret+='<ul>';
+    ret+='<li><h3>'+d['name']+'<h3></li>';
+    ret+='<li><a href="'+d['url']+'">'+'link'+'</a></li>';
+    ret+='<li>'+d['rating']+'</li>';
+//    for (var k in d){
+//        ret+=(k==='url')?
+//        '<li><a href="'+d[k]+'">'+k+'</a></li>':
+//                '<li><h4>'+k+'</h4>'+d[k]+'</li>';
+//    }
+    ret+='</ul>';
+    ret+='<button onclick="removePopup();">Remove This</button>';
+    ret+="</div>";
+    $('body').append(ret);
+    
+}
+
+function removePopup(){
+    $("#popup").remove();
+}
+

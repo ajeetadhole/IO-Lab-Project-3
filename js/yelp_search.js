@@ -23,11 +23,57 @@ var YSV = {
                 "rating": d["rating"], 
                 "review_count": d["review_count"],
                 "size": d["rating"] * 10 + (d["review_count"] / 10)};
+                "url":d["url"],
+                "display_phone":d["display_phone"]};
 //            return {"name": d["name"], "rating": d["rating"], "review_count": d["review_count"]};
         }
     })
 };
-function parseYelp(rdata) { 
+
+function parseYelp(rdata) {	
+    var ret = {"children": []}, allCat = {}, allNei = {}, allBus = {}, bus = rdata["businesses"];
+    for (var i = 0; i < bus.length; i++) {
+        var b = bus[i];
+        var node = YSV.get(b, "node");
+        var cats = YSV.get(b, "nei");
+        var nei = YSV.get(b, "ca");
+        allBus[node.name] = node;
+        for (var j = 0; j < cats.length; j++) {
+            var tc = cats[j];
+            if (typeof allCat[tc] === 'undefined') {
+                allCat[tc] = {'children': {}};
+            }
+            for (var k = 0; k < nei.length; k++) {
+                var tn = nei[k];
+                if (typeof allNei[tn] === 'undefined') {
+                    allNei[tn] = {'children': {}};
+                }
+
+                allNei[tn][node.name] = true;
+                allCat[tc]['children'][tn] = true;
+            }
+        }
+	}
+        var i = 0;
+        for (var c in allCat) {
+            ret["children"][i] = {"name": c, "children": []};
+            var j = 0;
+            for (var cc in allCat[c]['children']) {
+                var nl = [];
+                for (var nk in allNei[cc]) {
+                    if (typeof allBus[nk] !== 'undefined' && allBus[nk] !== undefined) {
+                        nl.push(allBus[nk]);
+                    }
+                }
+//                console.log(nl);
+                ret["children"][i]["children"].push({"name": cc, "children": nl});
+            }
+            i += 1;
+        }
+    return {"name": "root", "children": ret["children"]};
+}
+
+function parseYelpO(rdata) {	
     var ret = {"children": []}, allCat = {}, allNei = {}, allBus = {}, bus = rdata["businesses"];
     for (var i = 0; i < bus.length; i++) {
         var b = bus[i];
@@ -50,7 +96,8 @@ function parseYelp(rdata) {
                 allCat[tc]['children'][tn] = true;
             }
         }
-    }
+
+	}
         var i = 0;
         for (var c in allCat) {
             ret["children"][i] = {"name": c, "children": []};
@@ -78,7 +125,6 @@ function parseYelp(rdata) {
 //        }
     //}
     return {"name": "root", "children": ret["children"]};
-
 }
 //
 ////var $search_yelp = (function($){
@@ -239,7 +285,6 @@ var accessor = {
             for(var i = 0; i <= parameters.length; i++){
                 if(parameters[i][0] === "term"){            
                     parameters[i][1] = ret;
-                    console.log("Ret: ", ret);
                     $.each(ret.split(","), function(index, item) {
                         if($.inArray(item, neighborhoods) === -1){
                             tags += item + ",";                 
