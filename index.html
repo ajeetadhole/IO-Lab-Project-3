@@ -18,6 +18,8 @@
 	<!-- link to css file -->
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 	
 
 	<!--
@@ -55,71 +57,89 @@
 
 		<!-- Wrapper -->
 		<div id="wrapper">
+	
+			<!-- Logo -->
+			<div id="logo">
+				<h1>FOOD FINDER</h1>
+			</div>
 		
-			<!-- Sidebar -->
-			<div id="sidebar">
-			
-				<!-- Logo -->
-				<div id="logo">
-					<h1>YELP VIZ</h1>
+			<!-- Nav -->
+			<nav id="nav">
+				<div class="header" id="title">
+					<h2>Select Neighborhood</h2>
 				</div>
-			
-				<!-- Nav -->
-				<nav id="nav">
-					<div id="title">
-						<h2>Neighbourhoods</h2>
-					</div>
-					<ul>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Castro';">Castro</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='The Haight';">Haight</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Marina/Cow Hollow';">Marina</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Mission';">Mission</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Nob Hill';">Nob Hill</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='North Beach/Telegraph Hill';">North Beach</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Pacific Heights';">Pacific Heights</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Richmond';">Richmond</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='SoMa';">SoMa</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Sunset';">Sunset</a></li>
-					</ul>
-				
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">neighborhoods: </label>-->
-					<input id="neighborhoods" />
+					<input type="text" id="neighborhoods" placeholder="Search neighbourhoods"/>
 					<!-- </form> -->
 				</div>
-                </nav>
+				<ul id="neighborhoodList">
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Bayview-Hunters Point';">Bayview</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Castro';">Castro</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Chinatown';">Chinatown</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Civic Center';">Civic Center</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Embarcadero';">Embarcadero</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Financial District';">Financial District</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Fisherman&#39;s Wharf';">Fisherman's Wharf</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='The Haight';">Haight</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Marina/Cow Hollow';">Marina</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Mission';">Mission</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Nob Hill';">Nob Hill</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='North Beach/Telegraph Hill';">North Beach</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Pacific Heights';">Pacific Heights</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Richmond';">Richmond</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='SoMa';">SoMa</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Inner Sunset';">Sunset</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Union Square';">Union Square</a></li>
+				</ul>
+            </nav>
 
-				<!-- Cuisines -->
-				<section class="cuisines">
-					<header style=" margin-bottom: 10px; ">
-						<h2>Cuisines</h2>
-					</header>
-					<ul>
-						<li><a href="javascript:;" onclick="document.getElementById('tags').value='tradamerican';">American</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('tags').value='chinese';">Chinese</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('tags').value='greek';">Greek</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('tags').value='filipino';">Filipino</a></li>
-						<li><a href="javascript:;" onclick="document.getElementById('tags').value='mexican';">Mexican</a></li>
-					</ul>
-					
+			<!-- Cuisines -->
+			<section class="cuisines">
+				<header class="header">
+					<h2>Select Cuisine</h2>
+				</header>
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">Cuisines: </label>-->
-					<input id="tags" />
-                    <input type="button" value="Clear" onclick="document.getElementById('tags').value='';" /><input type="button" value="Check Neighborhoods Again" onclick="$('.cuisines').hide(); $('#nav').find('input, ul, li, div, a').attr('disabled',false);" />
+					<input type="text" id="tags" placeholder="Search cuisines"/>
 					<!-- </form> -->
 				</div>
-                </section>
-			</div>
+				<ul ul id="cuisineList">
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Afghani';">Afghani</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='African';">African</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Tradamerican';">American</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Basque';">Basque</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Brazilian';">Brazilian</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Chinese';">Chinese</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='French';">French</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Indonesian';">Indonesian</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Irish';">Irish</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Italian';">Italian</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Japanese';">Japanese</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Korean';">Korean</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Meditareeanean';">Meditareeanean</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Mexican';">Mexican</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Spanish';">Spanish</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Thai';">Thai</a></li>
+					<li><a href="javascript:;" onclick="document.getElementById('tags').value='Vienamese';">Vienamese</a></li>
+				</ul>		 
+            </section>
 				
 			<!-- Content -->
 			<div id="content">
-				<div id="content-inner">			
-				</div>
+				<div id="content-inner">	
+				</div>		
 			</div>
+
+			<!-- Search Button -->
+			<div id="buttonContainer">
+				<span id="searchButton">Search Again</span>
+			</div>
+	
 		</div>
         <script type="text/javascript" src="js/yelp_search.js"></script>
 		<script type="text/javascript" src="js/yelp_vis.js"></script> 
