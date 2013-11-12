@@ -54,23 +54,42 @@ function d3succ(data) {
     d3.select(self.frameElement).style("height", diameter + "px");
 }
 
+function refreshVis(){
+   document.getElementById("content-inner").innerHTML="";
+   $(".cuisines").show();
+   $('#nav').find('input, ul, li, div, a').attr('disabled',true);
+}
+
+function sendRequest(){
+   document.getElementById("content-inner").innerHTML="";
+   $_search_yelp(d3succ);
+}
+
 $("#neighborhoods").on('keydown',function(event) {
       if (event.keyCode === 13) {
-		console.log('Enter was pressed');
-        console.log(this.value);
 		var input_value = this.value;
-		function refreshVis(){
-		   document.getElementById("content-inner").innerHTML="";
-		   //$_search_yelp(d3succ);
-		   $(".cuisines").show();
-		   $('#nav').find('input, ul, li, div, a').attr('disabled',true);
-       }
-       if(input_value !== ''){
+		if(input_value !== ''){
 			_ycats[input_value]=true;
-			ycatsToS();
-			refreshVis();
-       }
-    }
+		}			
+		ycatsToS();
+		refreshVis();
+	}
+});
+
+$("#neighborhoodList").on("click", "a", function(event) {
+		_ycats[$("#neighborhoods").val()]=true;		
+		ycatsToS();
+		refreshVis();
+});
+
+$("#cuisineList").on("click", "a", function(event) {
+		$.each($("#tags").val().split(","), function(index, item) {
+			if(!(item in _ycats)){
+				_ycats[item]=true;
+			}			
+		});
+		ycatsToS();
+		sendRequest();
 });
 
 $("#tags").on('keydown',function(event) {
@@ -78,14 +97,14 @@ $("#tags").on('keydown',function(event) {
 		console.log('Enter was pressed');
         console.log(this.value);
 		var input_value = this.value;
-		function refreshVis(){
-		   document.getElementById("content-inner").innerHTML="";
-		   $_search_yelp(d3succ);
-       }
        if(input_value !== ''){
-			_ycats[input_value]=true;
+		$.each(input_value.split(","), function(index, item) {
+			if(!(item in _ycats)){
+				_ycats[item]=true;
+			}			
+		});
 			ycatsToS();
-			refreshVis();
+			sendRequest();
        }
     }
 });

@@ -1,3 +1,5 @@
+var neighborhoods = [];
+var arr =[];
 var YSV = {
     get: (function(d, s) {
         var cat = "categories",
@@ -27,16 +29,11 @@ var YSV = {
 };
 function parseYelp(rdata) {	
     var ret = {"children": []}, allCat = {}, allNei = {}, allBus = {}, bus = rdata["businesses"];
-	console.log("Business: ", bus);
     for (var i = 0; i < bus.length; i++) {
         var b = bus[i];
-		console.log("Here", b);
         var node = YSV.get(b, "node");
-		console.log("Node: ", node);
         var cats = YSV.get(b, "ca");
-		console.log("Categories: ", cats);
         var nei = YSV.get(b, "nei");
-		console.log("Neighborhood: ", nei);
         allBus[node.name] = node;
         for (var j = 0; j < cats.length; j++) {
             var tc = cats[j];
@@ -197,22 +194,33 @@ var accessor = {
 	//parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
 	//parameters.push(['limit',"100"]);
 	//parameters.push(["category_filter",""]);
+	function arrayObjectMatch(){
+		if(arr.length){
+			var arrayElement = arr[0];
+			for (var i in _ycats){
+				if(_ycats[i] !== arrayElement){
+					delete _ycats[i];
+				}
+			}
+			ret = "";
+		}
+	}
 	
-	
-
 	function ycatsToS(){
 		console.log(parameters);
-		var ret = ""; //arr = _ycats.keys();
-		// var arr =[];
-		// for (var k in _ycats){
-			// arr.push(k);
-		// }
-		// for(var i = 0; i < arr.length; i++){
-			// ret += ""+arr[i]+",";
-		// }
-		for(var i in Object.keys(_ycats)){
-			ret += Object.keys(_ycats)[i] + ",";
+		var ret = "", tags = ""; //arr = _ycats.keys();
+		for (var k in _ycats){
+			if($.inArray(k, arr) === -1){
+				arr.push(k);
+			}
 		}
+
+		for(var i = 0; i < arr.length; i++){
+			ret += ""+arr[i]+",";
+		}
+		// for(var i in Object.keys(_ycats)){
+			// ret += Object.keys(_ycats)[i] + ",";
+		// }
 
 		ret = ret.slice(0,-1);
 		var p = -1;
@@ -230,19 +238,19 @@ var accessor = {
 		if (p === -1){
 			for(var i = 0; i <= parameters.length; i++){
 				if(parameters[i][0] === "term"){			
-					parameters[i][1] = ret;				
-				$.each(ret.split(","), function(index, item) {
-					var tags = "";
-					console.log(item);
-					if($.inArray(item, neighborhoods) !== -1)
-						tags += item + ","; 
-				});
-					
+					parameters[i][1] = ret;
+					console.log("Ret: ", ret);
+					$.each(ret.split(","), function(index, item) {
+						if($.inArray(item, neighborhoods) === -1){
+							tags += item + ",";					
+						}else{
+							tags = "";
+						}
+					});
 					$("#tags").val(tags);			
 					break;
 				}
 			}
-			console.log("Tags: ", tags);
 		}else{
 /*			OAuth.setTimestampAndNonce(message);
 			OAuth.SignatureMethod.sign(message, accessor);
@@ -251,7 +259,13 @@ var accessor = {
 			for(var i = 0; i <= parameters.length; i++){
 				if(parameters[i][0] === "term"){			
 					parameters[i][1] = ret;
-					$("#tags").val(ret);
+					$.each(ret.split(","), function(index, item) {
+						item = "'" + item + "'";
+
+						if($.inArray(item, neighborhoods) !== -1)
+							tags += item + ",";
+					});
+					$("#tags").val(tags);
 					break;
 				}
 			}
@@ -468,7 +482,7 @@ $(function() {
 });
 
 $(function() {
-    var neighborhoods = [
+    neighborhoods = [
         "Alamo Square",
         "Anza Vista",
         "Ashbury Heights",

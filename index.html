@@ -69,7 +69,7 @@
 					<div id="title">
 						<h2>Neighbourhoods</h2>
 					</div>
-					<ul>
+					<ul id="neighborhoodList">
 						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Castro';">Castro</a></li>
 						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='The Haight';">Haight</a></li>
 						<li><a href="javascript:;" onclick="document.getElementById('neighborhoods').value='Marina/Cow Hollow';">Marina</a></li>
@@ -96,7 +96,7 @@
 					<header style=" margin-bottom: 10px; ">
 						<h2>Cuisines</h2>
 					</header>
-					<ul>
+					<ul id="cuisineList">
 						<li><a href="javascript:;" onclick="document.getElementById('tags').value='tradamerican';">American</a></li>
 						<li><a href="javascript:;" onclick="document.getElementById('tags').value='chinese';">Chinese</a></li>
 						<li><a href="javascript:;" onclick="document.getElementById('tags').value='greek';">Greek</a></li>
@@ -109,7 +109,7 @@
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">Cuisines: </label>-->
 					<input id="tags" />
-                    <input type="button" value="Clear" onclick="document.getElementById('tags').value='';" /><input type="button" value="Check Neighborhoods Again" onclick="$('.cuisines').hide(); $('#nav').find('input, ul, li, div, a').attr('disabled',false);" />
+                    <input type="button" value="Clear" onclick="document.getElementById('tags').value=''; document.getElementById('content-inner').innerHTML=''; arr.splice(1,arr.length); arrayObjectMatch();" /><input type="button" value="Check Neighborhoods Again" onclick="$('.cuisines').hide(); $('#nav').find('input, ul, li, div, a').attr('disabled',false); arr.splice(0,arr.length); _ycats = {}; ret = ''"; />
 					<!-- </form> -->
 				</div>
                 </section>
