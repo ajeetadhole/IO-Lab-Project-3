@@ -22,7 +22,7 @@ var YSV = {
                 "name": d["name"], 
                 "rating": d["rating"], 
                 "review_count": d["review_count"],
-                "size": d["rating"] * 10 + (d["review_count"] / 10)};
+                "size": d["rating"] * 10 + (d["review_count"] / 10),
                 "url":d["url"],
                 "display_phone":d["display_phone"]};
 //            return {"name": d["name"], "rating": d["rating"], "review_count": d["review_count"]};
@@ -223,7 +223,7 @@ var accessor = {
     tokenSecret: auth.accessTokenSecret
 };
 
-    _ycats = {};
+var _ycats = {};
 
     parameters = [];
     parameters.push(['term', terms]);
