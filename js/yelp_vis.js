@@ -108,6 +108,7 @@ $("#cuisineList").on("click", "a", function(event) {
             }           
         });
         ycatsToS();
+        refreshVis();
         sendRequest();
         $(".cuisines").delay(100).animate({
             left:-300,
@@ -117,10 +118,10 @@ $("#cuisineList").on("click", "a", function(event) {
             left:0,
             opacity:1,
         },300);
-        $("#content-inner").delay(600).animate({
+        $("#content-inner").delay(1000).animate({
             opacity:1,
         },500);
-        $("#content").delay(600).animate({
+        $("#content").delay(1000).animate({
             opacity:1,
         },500);
 });
@@ -137,6 +138,7 @@ $("#tags").on('keydown',function(event) {
                 }           
             });
             ycatsToS();
+            refreshVis();
             sendRequest();
             $(".cuisines").delay(100).animate({
                 left:-300,
@@ -146,10 +148,10 @@ $("#tags").on('keydown',function(event) {
                 left:0,
                 opacity:1,
             },300);
-            $("#content-inner").delay(600).animate({
+            $("#content-inner").delay(1000).animate({
                 opacity:1,
             },500);
-            $("#content").delay(600).animate({
+            $("#content").delay(1000).animate({
                 opacity:1,
             },500);
        }
