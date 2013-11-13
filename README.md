@@ -6,7 +6,7 @@ Food Finder
 
 Project Description
 
-Food Finder is a visual representation of restaurants in San Francisco neighborhoods grouped by cuisine. A user will select a neighborhood by choosing from a pre-selected list or by typing the name of the neighborhood and pressing ENTER. The user is then presented with a list of most common cuisines. He/she can choose from the list, or type a cuisine that is of interest and press ENTER in the text box. The application will then display bubbles that represent neighborhoods, with smaller bubbles inside that represent restaurants. Upon clicking on one of the restaurants, a user is presented with an information box containing details about the selected restaurant.
+Food Finder is a visual representation of restaurants in San Francisco neighborhoods grouped by cuisine. A user will select a neighborhood by choosing from a pre-selected list or by typing the name of the neighborhood and pressing ENTER. The user is then presented with a list of most common cuisines. He/she can choose from the list, or type a cuisine that is of interest and press ENTER in the text box. The application will then display bubbles that represent neighborhoods, with smaller bubbles inside that represent restaurants. The size of the small green bubbles represent restaurent desirability --a combination of restaurant ratings and number of reviews. Upon clicking on one of the restaurants, a user is presented with an information box containing details about the selected restaurant.
 
 Team Members
 
