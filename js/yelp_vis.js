@@ -181,12 +181,12 @@ function popup(d){
 	$("#popup").remove();
     var w = $(window).width()/8;
     var x = ($(window).width()/2)-w/2, y=$(window).height()/2;
-    var s= 'min-width:'+w+'px; position:absolute; left:'+x+'px ; top:'+y+'px; background-color:#ccc; z-index:100;border-radius:10px;padding:10px;';
+    var s= 'min-width:'+w+'px; position:absolute; left:'+x+'px ; top:'+y+'px; background-color:#CC0000; z-index:100;border-radius:10px;padding:10px;text-align:center;box-shadow: 0px 0px 30px 5px black;';
     var ret ='<div id="popup" style="'+s+'">';
     ret+='<ul>';
-    ret+='<li><h3>'+d['name']+'<h3></li>';
-    ret+='<li><a href="'+d['url']+'">'+'link'+'</a></li>';
-    ret+='<li>'+d['rating']+'</li>';
+    ret+='<li><h6>'+d['name']+'<h6></li>';
+    ret+='<li><b><a href="'+d['url']+'">'+'Web Page'+'</a></b></li>';
+    ret+='<li><h5>'+'Rating: '+d['rating']+' stars'+'</h5></li>';
 //    for (var k in d){
 //        ret+=(k==='url')?
 //        '<li><a href="'+d[k]+'">'+k+'</a></li>':
@@ -196,6 +196,7 @@ function popup(d){
     ret+='<button onclick="removePopup();">Remove This</button>';
     ret+="</div>";
     $('body').append(ret);
+	//console.log(d['address']);
     
 }
 
