@@ -12,7 +12,7 @@ Team Members
 
 	Ashley DeSouza		-	JavaScript, Yelp API
 	Jason Blum			-	JavaScript, Yelp API
-	Ajeeta Dhole		-	HTML/CSS, Layout design
+	Ajeeta Dhole		-	HTML/CSS, UI transitions, Layout design
 	Victor Starostenko	-	HTML/CSS, Layout design
 
 Demo
