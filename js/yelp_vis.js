@@ -219,7 +219,7 @@ function popup(d){
     $('body').append(ret);
     $("#popup").animate({
         left:0,
-    },400);
+    },50);
 
 	//console.log(d['address']);
     
