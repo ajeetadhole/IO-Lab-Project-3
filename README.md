@@ -16,7 +16,7 @@ Team Members
 	Victor Starostenko	-	HTML/CSS, Layout design
 
 Demo
-http://people.ischool.berkeley.edu/~vstarostenko/
+http://people.ischool.berkeley.edu/~ajeeta/IO-Lab-Project-3/
 
 Known Bugs
 
