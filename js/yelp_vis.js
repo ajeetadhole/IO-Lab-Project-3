@@ -118,6 +118,10 @@ $("#cuisineList").on("click", "a", function(event) {
             left:0,
             opacity:1,
         },300);
+        $("#legend").delay(1000).animate({
+                left:0,
+                opacity:1,
+            },500);
         $("#content-inner").delay(1000).animate({
             opacity:1,
         },500);
@@ -148,6 +152,10 @@ $("#tags").on('keydown',function(event) {
                 left:0,
                 opacity:1,
             },300);
+            $("#legend").delay(1000).animate({
+                left:0,
+                opacity:1,
+            },500);
             $("#content-inner").delay(1000).animate({
                 opacity:1,
             },500);
@@ -159,10 +167,21 @@ $("#tags").on('keydown',function(event) {
 });
 $('#searchButton').click(
     function(){
-        $("#buttonContainer").delay(100).animate({
+        $("#popup").animate({
             left:-300,
             opacity:0,
-        },400);
+        },100);
+
+        $("#legend").delay(100).animate({
+            left:-300,
+            opacity:0,
+        },500);
+
+        $("#buttonContainer").delay(500).animate({
+            left:-300,
+            opacity:0,
+        },300);
+
         $("#nav").delay(500).animate({
             left:0,
             opacity:1,
@@ -175,9 +194,7 @@ $('#searchButton').click(
         $("#content").delay(600).animate({
             opacity:0,
         },500);
-        $("#popup").animate({
-            opacity:0,
-        },500);
+
     }
 );
 
@@ -200,6 +217,10 @@ function popup(d){
     ret+='</ul>';
     ret+="</div>";
     $('body').append(ret);
+    $("#popup").animate({
+        left:0,
+    },400);
+
 	//console.log(d['address']);
     
 }

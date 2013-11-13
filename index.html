@@ -61,7 +61,7 @@
 			<!-- Logo -->
 			<div id="logo">
 				<h1>FOOD FINDER</h1>
-			</div>
+			</div>		
 		
 			<!-- Nav -->
 			<nav id="nav">
@@ -109,7 +109,7 @@
 					<input type="text" id="tags" placeholder="Search cuisines"/>
 					<!-- </form> -->
 				</div>
-				<ul ul id="cuisineList">
+				<ul id="cuisineList">
 					<li><a href="#" onclick="document.getElementById('tags').value='afghani';">Afghani</a></li>
 					<li><a href="#" onclick="document.getElementById('tags').value='african';">African</a></li>
 					<li><a href="#" onclick="document.getElementById('tags').value='newamerican';">American</a></li>
@@ -129,7 +129,22 @@
 					<li><a href="#" onclick="document.getElementById('tags').value='vietnamese';">Vietnamese</a></li>
 				</ul>		 
             </section>
-				
+
+            <ul id="legend">
+            	<li>
+					<span class="pinIndicator" id="pinIndicator1"></span>
+					<p>Neighborhood</p>
+				</li>
+				<li>
+					<span class="pinIndicator" id="pinIndicator2"></span>
+					<p>Cuisine</p>
+				</li>
+				<li>
+					<span class="pinIndicator" id="pinIndicator3"></span>
+					<p>Restaurant</p>
+				</li>
+			</div>
+
 			<!-- Content -->
 			<div id="content">
 				<div id="content-inner">	
@@ -140,6 +155,8 @@
 			<div id="buttonContainer">
 				<span id="searchButton">Search Again</span>
 			</div>
+
+
 	
 		</div>
         <script type="text/javascript" src="js/yelp_search.js"></script>
