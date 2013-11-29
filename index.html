@@ -20,36 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-	
-
-	<!--
-    <style type="text/css">
-		#sidebar {
-			float: left;
-		}
-		
-		#content {
-			display: inline-block;
-			/*float: right;*/
-		}
-		  
-		circle {
-			fill: rgb(31, 119, 180);
-			fill-opacity: .25;
-			stroke: rgb(31, 119, 180);
-			stroke-width: 1px;
-		}
-
-		.leaf circle {
-			fill: #ff7f0e;
-			fill-opacity: 1;
-		}
-
-		text {
-			font: 10px sans-serif;
-		}
-	</style> 
-    --> 
 			
 	</head>
 	
@@ -61,18 +31,23 @@
 			<!-- Logo -->
 			<div id="logo">
 				<h1>FOOD FINDER</h1>
-			</div>		
+			</div>	
+
+			<div id="mainInfo">
+				<p>Food Finder helps you browse popular restaurants in San Francisco.</p>
+				<p>Select a neighborhood and cuisine of your choice to start exploring!</p>
+			</div>
 		
 			<!-- Nav -->
 			<nav id="nav">
 				<div class="header" id="title">
-					<h2>Select Neighborhood</h2>
+					<h2>Pick a neighborhood</h2>
 				</div>
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">neighborhoods: </label>-->
-					<input type="text" id="neighborhoods" placeholder="Search neighbourhoods"/>
+					<input type="text" id="neighborhoods" placeholder="Search or pick one below"/>
 					<!-- </form> -->
 				</div>
 				<ul id="neighborhoodList">
@@ -99,20 +74,19 @@
 			<!-- Cuisines -->
 			<section class="cuisines">
 				<header class="header">
-					<h2>Select Cuisine</h2>
+					<h2>Pick a cuisine</h2>
 				</header>
 
 				<!-- Search -->
 				<div class="ui-widget">
 					<!-- <form method="post" action="#"> -->
 					<!--<label for="neighborhoods">Cuisines: </label>-->
-					<input type="text" id="tags" placeholder="Search cuisines"/>
+					<input type="text" id="tags" placeholder="Search or pick one below"/>
 					<!-- </form> -->
 				</div>
 				<ul id="cuisineList">
 					<li><a href="#" onclick="document.getElementById('tags').value='afghani';">Afghani</a></li>
 					<li><a href="#" onclick="document.getElementById('tags').value='african';">African</a></li>
-					<li><a href="#" onclick="document.getElementById('tags').value='newamerican';">American</a></li>
 					<li><a href="#" onclick="document.getElementById('tags').value='basque';">Basque</a></li>
 					<li><a href="#" onclick="document.getElementById('tags').value='brazilian';">Brazilian</a></li>
 					<li><a href="#" onclick="document.getElementById('tags').value='chinese';">Chinese</a></li>
@@ -130,21 +104,6 @@
 				</ul>		 
             </section>
 
-            <ul id="legend">
-            	<li>
-					<span class="pinIndicator" id="pinIndicator1"></span>
-					<p>Neighborhood</p>
-				</li>
-				<li>
-					<span class="pinIndicator" id="pinIndicator2"></span>
-					<p>Cuisine</p>
-				</li>
-				<li>
-					<span class="pinIndicator" id="pinIndicator3"></span>
-					<p>Restaurant</p>
-				</li>
-			</div>
-
 			<!-- Content -->
 			<div id="content">
 				<div id="content-inner">	
@@ -156,19 +115,27 @@
 				<span id="searchButton">Search Again</span>
 			</div>
 
-
+			<ul id="legend">
+            	<li>
+					<span class="pinIndicator" id="pinIndicator1"></span>
+					<p>Neighborhood</p>
+				</li>
+				<li>
+					<span class="pinIndicator" id="pinIndicator2"></span>
+					<p>Cuisine</p>
+				</li>
+				<li>
+					<span class="pinIndicator" id="pinIndicator3"></span>
+					<p>Restaurant</p> 
+					<p>(size represents popularity,</p>
+					<p>based on Yelp rating & no. of reviews.)</p>
+				</li>
+			</div>
 	
 		</div>
         <script type="text/javascript" src="js/yelp_search.js"></script>
 		<script type="text/javascript" src="js/yelp_vis.js"></script> 
 		<script type="text/javascript" src="js/script.js"></script>
 
-<!--		<script>
-			console.log('called');
-			(function($){
-			  clFn();
-			//$searchYelp(d3succ);
-			})($);
-		</script>-->
 	</body>
 </html>

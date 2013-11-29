@@ -1,8 +1,7 @@
 function d3succ(data) {
-    var diameter = 800,
+    var diameter = 900,
         format = d3.format(",d");
-	
-	
+		
     var pack = d3.layout.pack()
                 .size([diameter - 4, diameter - 4])
                 .value(function(d) {
@@ -28,11 +27,11 @@ function d3succ(data) {
     }).attr("transform", function(d) {
         //console.log('transform', d);
         return "translate(" + d.x + "," + d.y + ")";
-    }).on("click", function(d) {
+    }).on("mouseover", function(d) {
         console.log('clicked');
-        if(!d.children){
-        console.log('no c');    
-        popup(d);
+        if(!d.children && $('#legend').css("opacity")==1){
+            console.log('no c');    
+            popup(d).delay(500);
         }
     });
 
@@ -119,8 +118,10 @@ $("#cuisineList").on("click", "a", function(event) {
             opacity:1,
         },300);
         $("#legend").delay(1000).animate({
-                left:0,
                 opacity:1,
+            },500);
+        $("#mainInfo").delay(1000).animate({
+                opacity:0,
             },500);
         $("#content-inner").delay(1000).animate({
             opacity:1,
@@ -153,8 +154,10 @@ $("#tags").on('keydown',function(event) {
                 opacity:1,
             },300);
             $("#legend").delay(1000).animate({
-                left:0,
                 opacity:1,
+            },500);
+            $("#mainInfo").delay(1000).animate({
+                opacity:0,
             },500);
             $("#content-inner").delay(1000).animate({
                 opacity:1,
@@ -165,15 +168,13 @@ $("#tags").on('keydown',function(event) {
        }
     }
 });
+
 $('#searchButton').click(
     function(){
-        $("#popup").animate({
-            left:-300,
+        $("#legend").delay(300).animate({
             opacity:0,
-        },100);
-
-        $("#legend").delay(100).animate({
-            left:-300,
+        },500);
+        $("#popup").animate({
             opacity:0,
         },500);
 
@@ -181,7 +182,6 @@ $('#searchButton').click(
             left:-300,
             opacity:0,
         },300);
-
         $("#nav").delay(500).animate({
             left:0,
             opacity:1,
@@ -194,38 +194,34 @@ $('#searchButton').click(
         $("#content").delay(600).animate({
             opacity:0,
         },500);
-
+        $("#content-inner").css({
+            zIndex:30,
+        });
     }
 );
+
 
 function popup(d){
     console.log('popup');
 	$("#popup").remove();
-    var w = $(window).width()/8;
-    var x = ($(window).width()/2)-w/2, y=$(window).height()/2;
     var ret ='<div id="popup">';
     ret+='<ul>';
-    ret+='<li><h5>'+d['name']+'<h5></li>';
-    ret+='<li><h6>'+'Rating: '+d['rating']+' stars'+'</h6></li>';
-    ret+='<li><b><a target="_blank" href="'+d['url']+'">'+'Yelp Page'+'</a></b></li>';
-    
-//    for (var k in d){
-//        ret+=(k==='url')?
-//        '<li><a href="'+d[k]+'">'+k+'</a></li>':
-//                '<li><h4>'+k+'</h4>'+d[k]+'</li>';
-//    }
+    ret+='<li id="name"><h5><a target="_blank" href="'+d['url']+'">'+d['name']+'</a><h5></li>';
+    ret+='<li id="rating"><h6>'+'Rating: '+d['rating']+' stars'+'</h6></li>';
     ret+='</ul>';
     ret+="</div>";
     $('body').append(ret);
-    $("#popup").animate({
-        left:0,
-    },50);
-
-	//console.log(d['address']);
-    
+    $("#popup").css({
+        left: d.x + 180,
+        top: d.y + 20,
+    });
 }
 
-function removePopup(){
-    $("#popup").remove();
-}
+$('body').click(
+    function(){
+        $("#popup").remove().delay(5000);
+    }
+);
+
+
 
